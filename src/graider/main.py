@@ -10,8 +10,9 @@ genai.configure(api_key=gemini_key)
 
 model = genai.GenerativeModel("gemini-3.5-flash-lite")
 
-response = model.generate_content("Hola, ¿cómo estás?")
-print(response)
+# Simulating call to AI
+# response = model.generate_content("Hola, ¿cómo estás?")
+# print(response)
 
 rubric1 = "../rubrics/rubric1.txt"
 exam1 = "../exams/exam1.txt"
@@ -30,5 +31,17 @@ if os.path.exists(rubric1):
     with open(json_structure1, "r", encoding="utf-8") as jsn:
         json = jsn.read()
 
+propmt = """
+You are an AI that helps teachers save time. 
+You are going to correct exams and exercises from students, and grade them.
+You must indicate the justification for every correction.
+You must deliver the response in a JSON valid format as the one
+that I have just sent you. You must follow the rubric to correct
+the exam by heart. It is prohibited to grade exams and exercises
+by your own criteria/rubric.
+"""
+
 if exam and rubric and json:
-    print("hola")
+    response = model.generate_content(propmt + json + exam + rubric)
+
+response_json = response._result.candidates[0].content.parts[0].text
