@@ -1,7 +1,95 @@
-CRITERIOS GENERALES DE CORRECCIÓN
-    -En las preguntas objetivas, se concede la puntuación indicada cuando la respuesta es correcta.
-    -En las respuestas abiertas, se valora que la idea sea adecuada, comprensible y relacionada con la pregunta.
-    -En Educación Artística y Valores y Convivencia, se deben aceptar distintas respuestas válidas, sin exigir que todos los niños respondan de la misma manera.
-    -En Inglés, se puede valorar el intento de escritura según el nivel inicial del alumnado.
+# Rúbrica de corrección: Lengua Castellana
+**Puntuación máxima: 10 puntos.**
 
-Nota final de cada examen: suma de los puntos obtenidos, sobre 10.
+## E1. Las vocales — 1 punto
+Vocales que deben rodearse:
+- CASA: A, A.
+- PELO: E, O.
+- LUNA: U, A.
+- MESA: E, A.
+
+**Criterio:** +0,125 por cada vocal correctamente rodeada; −0,125 por cada consonante rodeada incorrectamente. Cada letra se contabiliza una sola vez. Resultado mínimo: 0; máximo: 1.
+
+## E2. Completa las palabras — 1,5 puntos
+Respuestas: a) g; b) r; c) l; d) l; e) m; f) p.
+
+**Criterio:** 0,25 por respuesta correcta. Se acepta la letra que falta o la palabra completa correctamente escrita, en mayúsculas o minúsculas. En otro caso: 0.
+
+## E3. Separa las palabras en sílabas — 1,5 puntos
+Respuestas:
+- a) pelota → pe-lo-ta: 0,5 puntos.
+- b) mariposa → ma-ri-po-sa: 0,5 puntos.
+- c) sol → sol, sin separaciones: 0,5 puntos.
+
+**Criterios:**
+- Pelota: 0,25 por cada una de las dos separaciones correctas.
+- Mariposa: 0,5 × (separaciones correctas / 3).
+- Sol: 0,5 únicamente si se identifica como una sola sílaba.
+- En pelota y mariposa, solo se puntúan las separaciones correctas si todas las letras aparecen en el orden original. Se aceptan guiones o espacios como separadores.
+
+## E4. Comprensión lectora — 2 puntos
+Cada pregunta vale 0,5 puntos.
+
+a) ¿Cómo se llama el perro? → Toby: 0,5.
+
+b) ¿De qué color es Toby? → Marrón: 0,5.
+
+c) ¿Dónde juega Ana con Toby? → En el parque: 0,5.
+
+d) ¿Qué le gusta hacer a Toby?
+- Correr y buscar pelotas: 0,5.
+- Solo correr o solo buscar pelotas: 0,25.
+- Ninguna de las dos actividades: 0.
+
+**Criterios generales:** aceptar respuestas equivalentes que transmitan la información correcta. No exigir reproducción literal del texto. No penalizar errores ortográficos menores si el significado es inequívoco. Las respuestas que contradigan la información solicitada no obtienen puntos.
+
+## E5. Singular y plural — 1 punto
+Respuestas:
+- a) gato → gatos.
+- b) flor → flores.
+- c) pelota → pelotas.
+- d) libro → libros.
+
+**Criterio:** 0,25 por cada plural correcto; en otro caso: 0. Se aceptan mayúsculas y minúsculas.
+
+## E6. Ordena las palabras — 1 punto
+Respuesta esperada: **La niña come una manzana.**
+
+Secuencia: La / niña / come / una / manzana.
+
+**Criterio:** 0,2 por cada palabra que coincida con la palabra esperada en su posición. Comparar las cinco posiciones, ignorando mayúsculas, minúsculas y puntuación. Las palabras añadidas no puntúan ni generan penalización adicional.
+
+## E7. Escribe una oración — 2 puntos
+Consigna: escribir una oración de al menos cinco palabras sobre el animal favorito del alumno.
+
+Evaluar por separado:
+
+**A. Relación con el tema — 0,5 puntos**
+- Identifica un animal y expresa preferencia por él: 0,5.
+- Menciona un animal sin expresar preferencia: 0,25.
+- No identifica ningún animal: 0.
+
+**B. Longitud — 0,5 puntos**
+- 5 palabras o más: 0,5.
+- 3–4 palabras: 0,25.
+- 1–2 palabras o respuesta en blanco: 0.
+
+Contar palabras separadas por espacios; la puntuación no cuenta como palabra adicional.
+
+**C. Construcción y comprensión — 0,5 puntos**
+- Oración completa, comprensible y con un verbo: 0,5.
+- Fragmento comprensible, pero sin estructura de oración completa: 0,25.
+- Respuesta incomprensible o sin una idea identificable: 0.
+
+Se aceptan estructuras sencillas y sujetos omitidos cuando la oración sea gramaticalmente válida en español.
+
+**D. Convenciones escritas — 0,5 puntos**
+- Comienza con mayúscula: 0,25.
+- Termina con un signo de puntuación adecuado: 0,25.
+
+Los errores ortográficos no se penalizan por separado, salvo que impidan comprender la respuesta.
+
+## Cálculo de la nota final
+**Nota = E1 + E2 + E3 + E4 + E5 + E6 + E7.**
+
+La suma máxima es de 10 puntos. No permitir puntuaciones negativas ni superar el máximo de cada ejercicio. Redondear la nota final a dos decimales.

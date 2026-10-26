@@ -1,0 +1,1 @@
+This project can help teachers correct exams or exercises based on rubrics. AI helped them correcting, so they can save time. Teachers must just review its corrections.

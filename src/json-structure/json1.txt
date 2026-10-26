@@ -1,29 +1,19 @@
-```json
 {
-  "alumno": {
-    "nombre": "string",
-    "curso": "string"
-  },
   "examen": {
-    "tipo": "string",
-    "asignatura": "string",
-    "nota_maxima": 10,
-    "nota_minima": 0,
     "preguntas": [
       {
         "enunciado": "string",
         "respuesta_alumno": null,
         "correccion": {
           "es_correcta": null,
-          "puntos_obtenidos": 0,
-          "justificacion": "string",
+          "puntos_obtenidos": "float",
+          "justificacion": "string"
         }
       }
     ],
     "resultado": {
-      "nota": "int"
+      "nota": "float",
       "observaciones": "string"
     }
   }
 }
-```
