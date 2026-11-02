@@ -2,18 +2,15 @@
   "examen": {
     "preguntas": [
       {
+        "pregunta_numero": "int",
         "enunciado": "string",
         "respuesta_alumno": null,
         "correccion": {
-          "es_correcta": null,
           "puntos_obtenidos": "float",
           "justificacion": "string"
         }
       }
     ],
-    "resultado": {
-      "nota": "float",
       "observaciones": "string"
-    }
   }
 }

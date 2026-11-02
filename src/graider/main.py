@@ -1,4 +1,5 @@
 import os
+import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -25,33 +26,42 @@ json_structure1 = carpeta_base.parent / "json-structure" / "json1.txt"
 if os.path.exists(rubric1):
     with open(rubric1, "r", encoding="utf-8") as rub:
         rubric = rub.read()
+else:
+    print("No rubric")
+    sys.exit(1)
 
 if os.path.exists(exam1):
     with open(exam1, "r", encoding="utf-8") as exa:
         exam = exa.read()
+else:
+    print("No exam")
+    sys.exit(1)
 
 if os.path.exists(json_structure1):
     with open(json_structure1, "r", encoding="utf-8") as jsn:
-        json = jsn.read()
+        json_structure = jsn.read()
+else:
+    print("No json-structure")
+    sys.exit(1)
 
 propmt = """
 You are an AI that helps teachers save time. 
 You are going to correct exams and exercises from students, and grade them.
 You must indicate the justification for every correction.
-You must deliver the response in a JSON valid format as the one
-that I have just sent you. You must follow the rubric to correct
-the exam by heart. It is prohibited to grade exams and exercises
-by your own criteria/rubric.
+You must deliver the response in <json>. You must follow <rubric> to correct
+the <exam> by heart. It is prohibited to grade exams and exercises
+by your own criteria/rubric. Each exercise is determined by its number. This
+number should be kept as well in <json>.
 """
 
-if exam and rubric and json:
+if exam and rubric and json_structure:
     response = client.models.generate_content(
-        model="gemini-3.5-flash",
+        model="gemini-3.5-flash-lite",
         contents="<propmt>"
         + propmt
         + "</propmt>"
         + "<json>"
-        + json
+        + json_structure
         + "</json>"
         + "<exam>"
         + exam
