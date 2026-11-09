@@ -21,6 +21,7 @@ carpeta_base = ruta_del_script.parent
 rubric1 = carpeta_base.parent / "rubrics" / "rubric1.txt"
 exam1 = carpeta_base.parent / "exams" / "exam1.txt"
 json_structure1 = carpeta_base.parent / "json-structure" / "json1.txt"
+prompt1 = carpeta_base.parent / "propmt" / "propmt.txt"
 
 # Getting all the needed files
 if os.path.exists(rubric1):
@@ -44,22 +45,22 @@ else:
     print("No json-structure")
     sys.exit(1)
 
-propmt = """
-You are an AI that helps teachers save time. 
-You are going to correct exams and exercises from students, and grade them.
-You must indicate the justification for every correction.
-You must deliver the response in <json>. You must follow <rubric> to correct
-the <exam> by heart. It is prohibited to grade exams and exercises
-by your own criteria/rubric. Each exercise is determined by its number. This
-number should be kept as well in <json>.
-"""
+if os.path.exists(prompt1):
+    with open(prompt1, "r", encoding="utf-8") as pr:
+        prompt = pr.read()
+else:
+    print("No prompt")
+    sys.exit(1)
 
-if exam and rubric and json_structure:
+# It appears that I have got the prompt and it is a string.
+# print(prompt)
+
+if exam and rubric and json_structure and prompt:
     response = client.models.generate_content(
         model="gemini-3.5-flash-lite",
-        contents="<propmt>"
-        + propmt
-        + "</propmt>"
+        contents="<prompt>"
+        + prompt
+        + "</prompt>"
         + "<json>"
         + json_structure
         + "</json>"

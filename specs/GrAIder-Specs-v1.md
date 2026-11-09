@@ -51,5 +51,4 @@ La salida se queda en tres campos. Esto es lo que se ha quitado y por qué:
 
 ## Pendiente
 
-- [ ] Cómo se identifica cada pregunta en la salida (por ejemplo, `E4d`) para compararla con el dataset.
 - [ ] Qué hace el código si una pregunta pasa de su máximo: ¿la recorta al máximo o avisa al profesor?
