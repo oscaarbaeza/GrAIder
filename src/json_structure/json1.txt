@@ -6,8 +6,8 @@
         "enunciado": "string",
         "respuesta_alumno": "string",
         "correccion": {
-          "puntos_obtenidos": "float",
-          "justificacion": "string"
+          "justificacion": "string",
+          "puntos_obtenidos": "float"
         },
         "aviso": "boolean"
       }

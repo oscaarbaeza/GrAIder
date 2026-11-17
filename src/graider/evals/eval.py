@@ -242,6 +242,6 @@ print(
 )
 
 print(dic_cases["case2"][1].get_equal_grading())
-print(dic_cases["case2"][0].get_json_message())
-print(dic_cases["case2"][1].get_json_message())
-print(dic_cases["case2"][2].get_json_message())
+print(dic_cases["case3"][0].get_json_message())
+print(dic_cases["case3"][1].get_json_message())
+print(dic_cases["case3"][2].get_json_message())
