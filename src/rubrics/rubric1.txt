@@ -9,6 +9,7 @@ Vocales que deben rodearse:
 - MESA: E, A.
 
 **Criterio:** +0,125 por cada vocal correctamente rodeada; −0,125 por cada consonante rodeada incorrectamente. Cada letra se contabiliza una sola vez. Resultado mínimo: 0; máximo: 1.
+Ejemplo: si el alumno solo redondea la U y la N, de la palabra LUNA. Tendría un 0 en todas las palabras, y en LUNA tendría un 0,125 por la U pero un -0.125 por la N. Entonces su puntuación sería de 0 en este ejercicio.
 
 ## E2. Completa las palabras — 1,5 puntos
 Respuestas: a) g; b) r; c) l; d) l; e) m; f) p.

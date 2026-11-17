@@ -4,7 +4,7 @@
       {
         "pregunta_numero": "int",
         "enunciado": "string",
-        "respuesta_alumno": null,
+        "respuesta_alumno": "string",
         "correccion": {
           "puntos_obtenidos": "float",
           "justificacion": "string"

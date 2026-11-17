@@ -30,6 +30,8 @@ class Case:
 
             json_clean = "\n".join(lines).strip()
 
+            json_clean = json_clean.replace("\\'", "'")
+
         return json_clean
 
     def is_valid_json(self):
