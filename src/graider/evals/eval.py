@@ -151,11 +151,9 @@ if jsn_structure and prompt and exam_questions and exam_answers:
         # after 15 calls, needs to wait 1 min so the rpm restarts and can do 15 calls again.
         # this is mod 5 because we are doing 3 calls to ai in 5 rounds. But if we change the
         # number of calls to ai, needs to be modified.
-        # if i % 5 == 0:
-        #     time.sleep(60)
-        # this is to check faster
-        if i == 5:
-            break
+        if i % 5 == 0:
+            time.sleep(60)
+
 answers.close()
 questions.close()
 
