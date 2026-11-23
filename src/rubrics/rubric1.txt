@@ -23,8 +23,8 @@ Respuestas:
 - c) sol → sol, sin separaciones: 0,5 puntos.
 
 **Criterios:**
-- Pelota: 0,25 por cada una de las dos separaciones correctas.
-- Mariposa: 0,5 × (separaciones correctas (0 / 4).
+- Pelota: 0,25 por cada una de las dos separaciones correctas (número de guiones) (0 / 2).
+- Mariposa: 0,5 × (separaciones correctas, número de guiones (0 / 3).
 - Sol: 0,5 únicamente si se identifica como una sola sílaba.
 - En pelota y mariposa, solo se puntúan las separaciones correctas si todas las letras aparecen en el orden original. Se aceptan guiones o espacios como separadores.
 
