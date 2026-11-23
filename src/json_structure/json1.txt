@@ -4,12 +4,12 @@
       {
         "pregunta_numero": "int",
         "enunciado": "string",
+        "aviso": "boolean",
         "respuesta_alumno": "string",
         "correccion": {
           "justificacion": "string",
           "puntos_obtenidos": "float"
-        },
-        "aviso": "boolean"
+        }
       }
     ],
       "observaciones": "string"

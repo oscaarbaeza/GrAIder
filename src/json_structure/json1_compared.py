@@ -2,16 +2,16 @@ from pydantic import BaseModel, ValidationError
 
 
 class Correccion(BaseModel):
-    puntos_obtenidos: float
     justificacion: str
+    puntos_obtenidos: float
 
 
 class Pregunta(BaseModel):
     pregunta_numero: int
     enunciado: str
+    aviso: bool
     respuesta_alumno: str
     correccion: Correccion
-    aviso: bool
 
 
 class Preguntas(BaseModel):

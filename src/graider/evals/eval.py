@@ -6,6 +6,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
 from google.genai.errors import APIError
 from tenacity import (
     retry,
@@ -30,23 +31,11 @@ def is_retryable_error(exception):
 def call_gemini(prompt, jsn_structure, question, answer, rubric):
     return client.models.generate_content(
         model="gemini-3.5-flash-lite",
-        contents="<prompt>"
-        + prompt
-        + "</prompt>"
-        + "<json>"
-        + jsn_structure
-        + "</json>"
-        + "<exam>"
-        + "<question>"
-        + actual_question
-        + "</question>"
-        + "<answer>"
-        + cas["answer"]
-        + "</answer>"
-        + "</exam>"
-        + "<rubric>"
-        + actual_rubric
-        + "</rubric>",
+        contents=f"<rubric>{rubric}</rubric><exam><question>{question}</question><answer>{answer}</answer></exam>",
+        config=types.GenerateContentConfig(
+            system_instruction=prompt + "\n<json>" + jsn_structure + "</json>",
+            temperature=0,
+        ),
     )
 
 
@@ -245,8 +234,6 @@ print(
     + str(equal_warning_counter_total)
 )
 
-print(dic_cases["case2"][1].get_equal_grading())
-
-print(dic_cases["case12"][0].get_json_message())
-print(dic_cases["case12"][1].get_json_message())
-print(dic_cases["case12"][2].get_json_message())
+print(dic_cases["case6"][0].get_json_message())
+print(dic_cases["case6"][1].get_json_message())
+print(dic_cases["case6"][2].get_json_message())
