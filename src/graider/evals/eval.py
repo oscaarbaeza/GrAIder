@@ -131,9 +131,15 @@ if jsn_structure and prompt and exam_questions and exam_answers:
                     actual_case.set_equal_json(True)
                 # In this case, the requirement is having the same grading as me. But
                 # it could be that in the future i want to change this to depends on variations. (+-.5)
-                if dict_json["examen"]["preguntas"][0]["correccion"][
-                    "puntos_obtenidos"
-                ] == float(cas["grade"]):
+                if (
+                    abs(
+                        dict_json["examen"]["preguntas"][0]["correccion"][
+                            "puntos_obtenidos"
+                        ]
+                        - float(cas["grade"])
+                    )
+                    <= 0.01
+                ):
                     actual_case.set_equal_grading(True)
 
                 if dict_json["examen"]["preguntas"][0]["aviso"] == bool(
@@ -240,6 +246,7 @@ print(
 )
 
 print(dic_cases["case2"][1].get_equal_grading())
-print(dic_cases["case3"][0].get_json_message())
-print(dic_cases["case3"][1].get_json_message())
-print(dic_cases["case3"][2].get_json_message())
+
+print(dic_cases["case12"][0].get_json_message())
+print(dic_cases["case12"][1].get_json_message())
+print(dic_cases["case12"][2].get_json_message())

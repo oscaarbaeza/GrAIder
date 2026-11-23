@@ -24,7 +24,7 @@ Respuestas:
 
 **Criterios:**
 - Pelota: 0,25 por cada una de las dos separaciones correctas.
-- Mariposa: 0,5 × (separaciones correctas / 3).
+- Mariposa: 0,5 × (separaciones correctas ( / 4).
 - Sol: 0,5 únicamente si se identifica como una sola sílaba.
 - En pelota y mariposa, solo se puntúan las separaciones correctas si todas las letras aparecen en el orden original. Se aceptan guiones o espacios como separadores.
 
@@ -86,7 +86,7 @@ Se aceptan estructuras sencillas y sujetos omitidos cuando la oración sea grama
 
 **D. Convenciones escritas — 0,5 puntos**
 - Comienza con mayúscula: 0,25.
-- Termina con un signo de puntuación adecuado: 0,25.
+- Termina la oración con un signo de puntuación adecuado: 0,25.
 
 Los errores ortográficos no se penalizan por separado, salvo que impidan comprender la respuesta.
 
